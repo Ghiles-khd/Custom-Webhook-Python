@@ -126,7 +126,7 @@ def handle_post():
             return "OK"
         
         # Integrations will be called
-        call_integration(problem_simple['PID'])
+        call_integration(problem_simple['ProblemID'])
         
     except Exception as e:
         logging.error("There was an error handling the Request")
